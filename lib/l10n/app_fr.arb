@@ -1,0 +1,336 @@
+{
+    "choose_language": "Langue choisie",
+    "onBoarding": "Sur-Enregistrement",
+    "getStarted": "Commencer",
+    "haveAccount": "Vous avez déjà un compte?",
+    "@@locale" : "fr",
+    "welcome": "Bienvenue",
+    "welcome_end": "LipaQuick",
+    "register": "Vous n'avez pas de compte,",
+    "register_here": "Inscrivez-vous ici.",
+    "user_name_hint": "Numéro de téléphone/E-mail",
+    "password_hint": "Mot de passe",
+    "old_password_hint": "Ancien mot de passe",
+    "new_password_hint": "Nouveau mot de passe",
+    "forgot_password_hint": "Mot de passe oublié",
+    "login_button_text": "Connexion",
+
+    "first_name_hint": "Prénom",
+    "last_name_hint": "Nom de famille",
+    "email_hint": "E-mail",
+    "phone_hint": "Téléphone",
+    "dob_hint": "Date de naissance",
+    "id_number": "Numéro d'identification",
+    "confirm_password":"Confirmer le mot de passe",
+    "sign_up_now": "Inscrivez-vous maintenant",
+    "trusted_by_users":"Fait confiance par les utilisateurs",
+    "already_have_an_account": "Vous avez déjà un compte,",
+    "login_here":"Connectez-vous ici",
+
+    "step_1":"Étape 1",
+    "step_2":"Étape 2",
+    "step_3":"Étape 3",
+    "step_4":"Étape 4",
+    "gender":"Genre",
+    "male":"Homme",
+    "female":"Femme",
+    "other":"Autre",
+    "btn_next":"Suivant",
+    "id_type":"Type d'identifiant",
+    "id_photo":"Photo d'identité",
+    "street":"Rue",
+    "referral_code":"Code de parrainage",
+    "referral_code_hint":"Entrez ou collez votre code de parrainage ici.",
+    "referral_code_validation":"Veuillez entrer le code de parrainage.",
+    "term_conditions":"J'accepte les Conditions générales, la Politique de confidentialité et la Politique de contenu",
+    "registration":"Inscription",
+    "error":"Erreur",
+
+    "validation_password_characters":"Le mot de passe doit contenir au moins 8 caractères\n",
+    "validation_password_lowercase":"Le mot de passe doit contenir au moins une lettre minuscule\n",
+    "validation_password_uppercase":"Le mot de passe doit contenir au moins une lettre majuscule\n",
+    "validation_password_digit":"Le mot de passe doit contenir au moins un chiffre\n",
+    "validation_password_symbol":"Le mot de passe doit contenir au moins un symbole (*@#$)",
+
+    "validation_street":"Veuillez entrer une rue.",
+    "validation_select_id_hint":"Sélectionnez votre carte d'identité",
+    "validation_id_photo":"Sélectionnez votre carte d'identité",
+    "validation_pick_image_msg":"Vous n'avez pas encore sélectionné d'image.",
+    "validation_identity_error":"Une valeur invalide a été saisie, veuillez entrer un(e) {hint} valide",
+    "@validation_identity_error": {
+          "placeholders": {
+            "hint": {
+              "type": "String"
+            }
+          }
+        },
+
+    "validation_first_name":"Veuillez entrer le prénom.",
+    "validation_last_name":"Veuillez entrer le nom de famille.",
+    "validation_email":"Veuillez entrer l'e-mail.",
+    "validation_email_valid":"Veuillez entrer une adresse e-mail valide.",
+    "validation_phone":"Veuillez entrer le numéro de téléphone.",
+    "validation_phone_valid":"Veuillez entrer un numéro de téléphone valide.",
+    "validation_dob":"Veuillez sélectionner votre date de naissance.",
+    "validation_id_number":"Veuillez entrer le numéro d'identification.",
+    "validation_confirm_password":"Veuillez entrer le mot de passe de confirmation.",
+    "validation_password_not_matched":"Les mots de passe ne correspondent pas, veuillez vérifier vos mots de passe.",
+
+    "validation_phone_email_empty": "Veuillez entrer le numéro de téléphone ou l'e-mail.",
+    "validation_phone_email_valid": "Veuillez entrer un numéro de téléphone ou une adresse e-mail valide.",
+    "validation_password_empty": "Veuillez entrer le mot de passe.",
+    "validation_password_valid": "Veuillez entrer un mot de passe valide.",
+    "invalid_login_credentials": "Nom d'utilisateur ou mot de passe invalide, veuillez entrer des informations de connexion valides",
+    "login_successful_msg": "Connexion réussie",
+
+    "otp_page_title":"Vérification OTP",
+    "otp_number_verified": "Votre numéro a été vérifié avec succès. Appuyez sur OK pour continuer.",
+    "button_ok": "OK",
+    "success_hint": "Succès",
+    "enter_otp_hint": "Vérifier le mobile",
+    "sent_verification_hint": "Entrez le code à 6 chiffres que nous avons envoyé",
+    "button_continue": "Continuer",
+    "no_otp_recevied_hint": "Vous n'avez pas reçu le code de vérification?",
+    "button_resend_hint": "Renvoyer le code",
+    "resend_otp_hint": "Renvoyer le code dans {time} secondes.",
+  "@resend_otp_hint": {
+    "placeholders": {
+      "time": {
+        "type": "int"
+      }
+    }
+  },
+  "invalid_otp_msg": "We could not verify your phone number, Please try again.",
+  "account_number_hint": "Numéro de compte",
+  "re_enter_account_number": "Ressaisissez le numéro de compte",
+  "account_holder_name": "Nom du titulaire du compte",
+  "select_bank_hint": "Sélectionnez votre banque",
+  "swift_code_hint": "Entrez le code SWIFT",
+  "select_recipient_hint": "Select Recipient's Bank",
+  "recipient_account_number_hint": "Numéro du compte bénéficiaire",
+  "recipient_account_holder_name": "Nom du bénéficiaire",
+  "recipient_select_bank_hint": "Sélectionnez la banque du bénéficiaire",
+  "recipient_swift_code_hint": "Code SWIFT du bénéficiaire",
+  "transfer_confirm_title": "Veuillez confirmer les \ndétails de votre virement :",
+  "bank_name_hint": "Nom de la banque",
+  "confirm_pay_hint": "Confirmer et payer",
+
+  "card_number_hint": "Numéro de carte",
+  "re_enter_card_number": "Ressaisissez le numéro de carte",
+  "expired_date": "Date d'expiration",
+  "cvc_cvv_hint": "CVC/CVV",
+  "card_holder_name_hint": "Nom du titulaire de la carte",
+
+  "validation_hint": "Veuillez entrer {hint}.",
+  "@validation_hint": {
+    "placeholders": {
+      "hint": {
+        "type": "String"
+      }
+    }
+  },
+   "add_account_title": "Ajouter un compte bancaire",
+    "set_default_message": "Définir ceci comme votre compte par défaut.",
+    "error_hint": "Erreur",
+    "user_account_hint": "Votre compte",
+    "bank_account_hint": "Compte bancaire",
+    "something_went_wrong_hint": "Quelque chose ne va pas ici, veuillez vérifier à nouveau.",
+    "go_back_hint": "Retour",
+    "empty_bank_account_hint": "Aucun compte bancaire n'est lié.",
+    "add_account_hint": "Ajouter un compte bancaire",
+    "set_as_default_hint": "Définir comme par défaut",
+    "delete_hint": "Supprimer",
+    "default_account_delete_hint": "Ceci est le compte principal lié au compte. Veuillez choisir un autre compte par défaut, puis supprimer ce compte.",
+    "session_time_out_hint": "Oups, il semble que votre session a expiré. Veuillez vous connecter pour continuer.",
+    "banks_not_found_hint": "Aucune banque trouvée",
+    "select_bank_account_hint": "Sélectionnez votre compte bancaire",
+
+    "add_card_title": "Ajouter une carte",
+    "add_new_card_title": "Ajouter une nouvelle carte",
+    "expiry_date_title": "Date d'expiration",
+    "expiry_date_error_hint": "Veuillez sélectionner votre date d'expiration",
+    "cards_title": "Vos cartes",
+    "cards_error_title": "Cartes",
+    "no_cards_added": "Aucune carte n'est liée.\n Appuyez sur AJOUTER DES CARTES pour lier votre carte.",
+    "remove_card_hint": "Retirer la carte",
+    "dropdown_more_hint": "Plus",
+
+    "chat_title": "Chat",
+    "no_recent_chat_hint": "Pas de discussions récentes",
+    "start_chat_hint": "Commencer le chat",
+
+    "reload_hint": "Recharger",
+    "payment_paid_title": "Payé à {currency}{amount}",
+    "@payment_paid_title": {
+      "placeholders": {
+        "currency": {
+          "type": "String"
+        },
+        "amount": {
+          "type": "String"
+        }
+      }
+    },
+    "payment_received_title": "Reçu de {currency}{amount}",
+    "@payment_received_title": {
+      "placeholders": {
+        "currency": {
+          "type": "String"
+        },
+        "amount": {
+          "type": "String"
+        }
+      }
+    },
+
+    "search_title": "Recherche",
+    "try_again_hint": "Réessayer",
+    "no_contact_hint": "Aucun contact trouvé.",
+
+    "validation_format_hint": "Veuillez saisir {hint} valide.",
+    "@validation_format_hint": {
+      "placeholders": {
+        "hint": {
+          "type": "String"
+        }
+      }
+    },
+    "merchat_title": "Marchand",
+    "send_money_title": "Envoyer de l'argent",
+    "amount_title": "Montant",
+    "discount_applied": "Réduction appliquée {discount_code}.",
+    "@discount_applied": {
+      "placeholders": {
+        "discount_code": {
+          "type": "String"
+        }
+      }
+    },
+    "discount_saving": "Économie de réduction {amount}.",
+    "@discount_saving": {
+      "placeholders": {
+        "amount": {
+          "type": "double"
+        }
+      }
+    },
+    "apply_discount": "Appliquer une réduction",
+    "enter_amount": "Veuillez saisir le montant.",
+    "pay_title": "Payer",
+    "select_bank_accout": "Veuillez sélectionner votre compte bancaire.",
+
+    "logout_title": "Déconnexion",
+    "logout_msg": "Voulez-vous vous déconnecter ?",
+    "btn_yes": "Oui",
+    "btn_no": "Non",
+
+  "validation_format_hint": "Veuillez entrer valide {hint}.",
+  "@validation_format_hint": {
+    "placeholders": {
+      "hint": {
+        "type": "String"
+      }
+    }
+  },
+
+  "logout_title": "Déconnexion",
+    "logout_msg": "Voulez-vous vous déconnecter?",
+    "btn_yes": "Oui",
+    "btn_no": "Non",
+
+  "settings": "Paramètres",
+  "language": "Langue",
+  "notification": "Notifications",
+  "invite_message": "",
+  "invite_message": "Je vous invite à utiliser LipaQuick, une application de paiement simple et facile.\n Voici mon {code} - il suffit de le saisir lors de la création d'un compte. Lors de votre premier paiement, vous recevrez un cashback",
+      "@invite_message": {
+          "placeholders": {
+            "code": {
+              "type": "String"
+            }
+          }
+        },
+
+   "nav_profile": "Mon profil",
+   "nav_merchant": "Commerçant à proximité",
+   "nav_history": "Historique des transactions",
+   "nav_invite": "Inviter un ami",
+   "nav_settings": "Paramètres",
+   "nav_more": "Plus",
+   "nav_logout": "Déconnexion",
+
+   "nav_profile_transactions": "Transactions",
+   "nav_profile_transactions_hint": "Vos transactions",
+   "nav_profile_accounts": "Comptes",
+   "nav_profile_accounts_hint": "Vos comptes bancaires liés",
+   "nav_profile_cards": "Cartes",
+   "nav_profile_cards_hint": "Vos cartes liées",
+   "nav_profile_privacy": "Confidentialité",
+   "nav_profile_privacy_hint": "Mettre à jour les détails et le mot de passe",
+   "nav_profile_payment": "Paiement",
+   "nav_profile_payment_hint": "Mettre à jour les paramètres de paiement",
+   "nav_profile_notification": "Notification",
+   "nav_profile_notification_hint": "Modifier les paramètres de notification",
+   "nav_profile_logout": "Se déconnecter",
+   "nav_profile_logout_hint": "Quitter l'application et effacer votre session",
+   "no_internet": "Impossible de se connecter à Internet, veuillez vérifier votre réseau.",
+    "transaction_history_empty": "You have not performed any transactions.",
+    "transaction_code": "Transaction Code : {tran_code}",
+    "@tran_code": {
+       "placeholders": {
+           "code": {
+               "type": "String"
+             }
+           }
+       },
+    "hint_sent_to": "Sent To: {sent}",
+     "@sent": {
+        "placeholders": {
+            "code": {
+                "type": "String"
+              }
+            }
+        },
+     "hint_received_from": "Received From: {received}",
+       "@received": {
+          "placeholders": {
+              "code": {
+                  "type": "String"
+                }
+              }
+          },
+    "transfer_money_title": "Transfer Money",
+    "transfer_confirmation": "Transfer Confirmation",
+    "button_send_now": "Send Now",
+    "button_retry": "Retry",
+    "from_hint": "From",
+    "to_hint": "To",
+    "transfer_amount_hint": "Transfer Amount",
+    "service_charge_hint": "Service Charge",
+    "service_commission_hint": "Commission",
+    "total_amount_hint": "Total Amount",
+    "change_password_title": "Change Password",
+    "change_password_success_msg": "You password had been updated successfully,\nPlease login to continue.",
+    "un_verified_account": "Un-Verified Account",
+    "un_verified_account_msg": "The user account has not been verified. Payment cannot be initiated to un-verified users.",
+    "scan_qrcode_title": "Scan QR Code",
+    "adjust_qrcode_msg": "Adjust QR code into the green box.",
+    "error_controller_not_ready": "QR processor is still get reading.",
+    "permission_denied": "Camera Access Permission Denied.",
+    "enable_app_lock": "Enable App Lock",
+    "payment_methods_title": "Payment Method",
+    "default_payment_hint": "Default Payment Method",
+    "payment_methods_not_found": "No payment methods has been linked to this account. Please link your payment method.",
+    "add_payment": "Add Payment",
+    "create_app_pin": "Create App Lock Pin",
+    "pin_create_success": "App lock pin created successfully",
+    "enter_valid_pin": "Invalid App Lock Pin",
+    "enter_app_lock_pin": "Enter your App Lock Pin",
+    "edit_quick_actions": "Edit Quick Actions",
+    "update_quick_actions": "Update Quick Actions",
+    "enable_disable_quick": "Enable-Disable quick actions",
+    "social_post": "Social Post",
+    "no_social_post_found": "No social post found",
+    "forgot_password_title": "Account Recovery",
+    "forgot_password_success_msg": "You password had been updated successfully,\nPlease login to continue."
+}

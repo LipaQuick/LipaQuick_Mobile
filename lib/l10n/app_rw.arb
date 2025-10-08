@@ -1,0 +1,322 @@
+{
+  "choose_language": "Hitamo Ururimi",
+  "onBoarding": "Gutangiza",
+  "getStarted": "Tangira",
+  "haveAccount": "Ufite Konti?",
+  "@@locale" : "rw",
+  "welcome": "Murakaza Neza",
+  "welcome_end": "LipaQuick",
+  "register": "Nta konti ufite,",
+  "register_here": "Iyandikishe",
+  "user_name_hint": "Nimero ya Telefone/Imeyili",
+  "password_hint": "Ijambo ry’Ibanga",
+  "old_password_hint": "Ijambo ry’Ibanga rya Kera",
+  "new_password_hint": "Ijambo ry’Ibanga Rishya",
+  "forgot_password_hint": "Wibagiwe Ijambo ry’Ibanga",
+  "login_button_text": "Injira",
+
+  "first_name_hint": "Izina rya Mbere",
+  "last_name_hint": "Izina rya Nyuma",
+  "email_hint": "Imeyili",
+  "phone_hint": "Telefoni",
+  "dob_hint": "Itariki y’Amavuko",
+  "id_number": "Indangamuntu",
+  "confirm_password":"Emeza Ijambo ry’Ibanga",
+  "sign_up_now": "Iyandikishe Ubu",
+  "trusted_by_users":"Byizerwa n’Abakoresha",
+  "already_have_an_account": "Usanzwe ufite konti,",
+  "login_here":"Injira Hano",
+  "step_1":"Intambwe 1",
+  "step_2":"Intambwe 2",
+  "step_3":"Intambwe 3",
+  "step_4":"Intambwe 4",
+  "gender":"Igitsina",
+  "male":"Gabo",
+  "female":"Gore",
+  "other":"Ibindi",
+  "btn_next":"Komeza",
+  "id_type":"Ubwoko bw’Indangamuntu",
+  "id_photo":"Ifoto y’Indangamuntu",
+  "street":"Umuhanda",
+  "referral_code":"Kode y’Uhamagarira",
+  "referral_code_hint":"Andika cyangwa Shyira Kode y’Uhamagarira hano.",
+  "referral_code_validation":"Shyiramo Kode y’Uhamagarira.",
+  "term_conditions":"Nemeye Amategeko n’Amabwiriza, Politiki y’Ibanga na Politiki y’Ibirimo",
+  "registration":"Iyandikisha",
+  "error":"Ikosa",
+
+  "validation_password_characters":"Ijambo ry’ibanga rigomba kuba rifite nibura inyuguti 8\n",
+  "validation_password_lowercase":"Ijambo ry’ibanga rigomba kuba rifite inyuguti nto nibura imwe\n",
+  "validation_password_uppercase":"Ijambo ry’ibanga rigomba kuba rifite inyuguti nkuru nibura imwe\n",
+  "validation_password_digit":"Ijambo ry’ibanga rigomba kuba rifite umubare nibura umwe\n",
+  "validation_password_symbol":"Ijambo ry’ibanga rigomba kuba rifite ikimenyetso (*@#$)",
+
+  "validation_street":"Shyiramo umuhanda.",
+  "validation_select_id_hint":"Hitamo Indangamuntu yawe",
+  "validation_id_photo":"Hitamo Ifoto y’Indangamuntu yawe",
+  "validation_pick_image_msg":"Ntabwo uratoranya ifoto.",
+  "validation_identity_error":"Icyo washyizemo ntabwo gikwiye, Shyiramo {hint} ikwiye",
+  "@validation_identity_error": {
+      "placeholders": {
+        "hint": {
+          "type": "String"
+        }
+      }
+    },
+
+
+  "validation_first_name":"Shyiramo izina rya mbere.",
+  "validation_last_name":"Shyiramo izina rya nyuma.",
+  "validation_email":"Shyiramo imeyili ikwiye.",
+  "validation_email_valid":"Shyiramo imeyili ikwiye.",
+  "validation_phone":"Shyiramo numero ya telefoni.",
+  "validation_phone_valid":"Shyiramo numero ya telefoni ikwiye.",
+  "validation_dob":"Hitamo Itariki y’Amavuko.",
+  "validation_id_number":"Shyiramo numero y’indangamuntu.",
+  "validation_confirm_password":"Shyiramo ijambo ry’ibanga ryemeza.",
+  "validation_password_not_matched":"Ijambo ry’ibanga ntirihuye, ongera usuzume amagambo yawe y’ibanga.",
+
+  "validation_phone_email_empty": "Shyiramo numero ya telefoni cyangwa imeyili.",
+  "validation_phone_email_valid": "Shyiramo numero ya telefoni cyangwa imeyili ikwiye.",
+  "validation_password_empty": "Shyiramo ijambo ry’ibanga.",
+  "validation_password_valid": "Shyiramo ijambo ry’ibanga rikwiye.",
+  "invalid_login_credentials": "Izina cyangwa ijambo ry’ibanga ntabwo bikwiye, shyiramo ibisobanuro byo kwinjira bikwiye",
+  "login_successful_msg": "Winjiye neza",
+
+  "otp_page_title":"Kugenzura OTP",
+  "otp_number_verified": "Numero yawe yagenzuwe neza. Kanda OK kugira ngo ukomeze.",
+  "button_ok": "OK",
+  "success_hint": "Byakunze",
+  "enter_otp_hint": "Emeza Telefoni",
+  "sent_verification_hint": "Shyiramo kode y’imirongo 6 twakwohereje",
+  "button_continue": "Komeza",
+  "no_otp_recevied_hint": "Ntabwo wakiriye kode y’ubugenzuzi?",
+  "button_resend_hint": "Ohereza Kode Indi",
+  "resend_otp_hint": "Ongera wohereze Kode nyuma ya {time} amasegonda.",
+  "@resend_otp_hint": {
+    "placeholders": {
+      "time": {
+        "type": "int"
+      }
+    }
+  },
+"invalid_otp_msg":"Ntabwo twashoboye kugenzura numero yawe ya telefoni, ongera ugerageze.",
+"account_number_hint": "Nimero ya Konti",
+"re_enter_account_number": "Ongera ushyiremo Nimero ya Konti",
+"account_holder_name": "Izina rya Nyiri Konti",
+"select_bank_hint": "Hitamo Banki yawe",
+"swift_code_hint": "Shyiramo Kode ya Swift",
+
+"recipient_account_number_hint": "Numero ya Konti y’Uwishyurwa",
+"recipient_account_holder_name": "Izina ry’Uwishyurwa",
+"recipient_select_bank_hint": "Hitamo banki y’uwishyurwa",
+"recipient_swift_code_hint": "Kode ya Swift y’Uwishyurwa",
+
+"transfer_confirm_title": "emeza dusobanura ibijyanye n’ohereza yawe:",
+"bank_name_hint": "Izina rya Banki",
+"confirm_pay_hint": "Emeza Wishyure",
+
+"card_number_hint": "Nimero ya Karita",
+"re_enter_card_number": "Ongera ushyiremo Nimero ya Karita",
+"expired_date": "Itariki y’Isozwa",
+"cvc_cvv_hint": "CVC/CVV",
+"card_holder_name_hint": "Izina rya Nyir’Karita",
+
+ "validation_hint": "Shyiramo {hint}.",
+ "@validation_hint": {
+     "placeholders": {
+       "hint": {
+         "type": "String"
+       }
+     }
+   },
+ "add_account_title": "Shyiraho Konti ya Banki",
+ "set_default_message": "Shyira iyi nka konti yawe isanzwe",
+ "error_hint": "Ikosa",
+ "user_account_hint": "Konti yawe",
+ "bank_account_hint": "Konti ya Banki",
+ "something_went_wrong_hint": "Ikintu ntabwo gikwiye hano, ongera usuzume.",
+ "go_back_hint": "Subira Inyuma",
+ "empty_bank_account_hint": "Nta Konti ya Banki yashyizweho.",
+ "add_account_hint": "Shyiraho Konti ya Banki",
+ "set_as_default_hint": "Shyira nka Konti ya Default",
+ "delete_hint": "Siba",
+ "default_account_delete_hint": "Iyi ni konti yibanze ihujwe na konti. Hitamo indi konti yibanze, hanyuma usibe iyi konti.",
+ "session_time_out_hint": "Ooops! Igihe cyawe cyarangiye. Winjire kugira ngo ukomeze",
+ "banks_not_found_hint": "Nta Banki Zabonywe",
+ "select_bank_account_hint": "Hitamo Konti yawe ya Banki",
+
+ "add_card_title": "Shyiraho Karita",
+ "add_new_card_title": "Shyiraho Karita Nshya",
+ "expiry_date_title": "Itariki y’Isozwa",
+ "expiry_date_error_hint": "Hitamo itariki y’isozwa",
+ "cards_title": "Amakarita yawe",
+ "cards_error_title": "Amakarita",
+ "no_cards_added": "Nta Karita Zashyizweho.\n Kanda SHYIRA KARITA kugira ngo wongere karita yawe.",
+ "remove_card_hint": "Kuraho Karita",
+ "dropdown_more_hint":"Ibindi",
+
+ "chat_title": "Ibiganiro",
+ "no_recent_chat_hint": "Nta Kiganiro cyaherukaga",
+ "start_chat_hint": "Tangiza Ikiganiro",
+
+ "reload_hint": "Ongera Urebe",
+ "payment_paid_title": "Yishyuwe {currency}{amount}",
+ "@payment_paid_title":{
+    "placeholders":{
+       "currency":{
+       "type": "String"
+       },
+       "amount":{
+         "type": "String"
+       }
+    }
+ },
+ "payment_received_title": "Yakiriwe Avuye kuri {currency}{amount}",
+  "@payment_received_title":{
+     "placeholders":{
+        "currency":{
+        "type": "String"
+        },
+        "amount":{
+          "type": "String"
+        }
+     }
+  },
+
+  "search_title": "Gushakisha",
+  "try_again_hint": "Gerageza",
+  "no_contact_hint": "Nta contact yabonetse",
+
+ "validation_format_hint": "Injiza {hint} yemewe.",
+ "@validation_format_hint": {
+    "placeholders": {
+      "hint": {
+        "type": "String"
+      }
+    }
+ },
+ "merchat_title": "Umucuruzi",
+ "send_money_title": "Ohereza Amafaranga",
+ "amount_title": "Umubare",
+ "discount_applied": "Igabanyirizwa ryakoreshejwe {discount_code}.",
+  "@discount_applied": {
+     "placeholders": {
+       "discount_code": {
+         "type": "String"
+       }
+     }
+  },
+  "discount_saving": "kugabanyirizwa {amount}.",
+    "@discount_saving": {
+       "placeholders": {
+         "amount": {
+           "type": "double",
+            "format": "decimalPattern"
+         }
+       }
+    },
+  "apply_discount": "Koresha Igabanyirizwa",
+  "enter_amount": "Injiza umubare w'amafaranga.",
+  "pay_title": "Iyishyure",
+  "select_bank_accout": "Hitamo konti ya banki.",
+
+ "logout_title": "Sohoka",
+ "logout_msg": "Urashaka gusohoka?",
+ "btn_yes": "Yego",
+ "btn_no": "Oya",
+
+ "settings": "Igenamiterere",
+ "language": "Ururimi",
+ "notification": "Amakuru",
+ "invite_message": "Ndakutumira gukoresha LipaQuick, porogaramu yoroshye kandi yihuse yo kwishyura.\n Dore kode yanjye-{code}, jya uyikoresha mu kurema konti.",
+   "@invite_message": {
+        "placeholders": {
+          "code": {
+            "type": "String"
+          }
+        }
+      },
+ "nav_profile": "Umwirondoro Wanjye",
+ "nav_merchant": "Abacuruzi Hafi",
+ "nav_history": "Amakuru y'Ibikorwa",
+ "nav_invite": "Tumira Inshuti",
+ "nav_settings": "Igenamiterere",
+ "nav_more": "Ibindi",
+ "nav_logout": "Sohoka",
+
+ "nav_profile_transactions": "Ibikorwa",
+ "nav_profile_transactions_hint": "Ibikorwa byawe",
+ "nav_profile_accounts": "Konti",
+ "nav_profile_accounts_hint": "Konti za banki zihujwe",
+ "nav_profile_cards": "Amakarita",
+ "nav_profile_cards_hint": "Amakarita zawe zahujwe",
+ "nav_profile_privacy": "Ubuzima bwite",
+ "nav_profile_privacy_hint": "Hindura ibisobanuro n'ijambo ry'ibanga",
+ "nav_profile_payment": "Kwishyura",
+ "nav_profile_payment_hint": "Hindura uburyo bwo kwishyura",
+ "nav_profile_notification": "Amakuru",
+ "nav_profile_notification_hint": "Hindura uburyo bw'amatangazo",
+ "nav_profile_logout": "Sohoka",
+ "nav_profile_logout_hint": "Sohoka muri LipaQuick no gusiba session",
+ "no_internet": "Ntibyakunze guhuza na interineti, Reba uko umuyoboro uhagaze.",
+ "transaction_history_empty": "Nta bikorwa byakozwe.",
+ "transaction_code": "Kode y'Ibikorwa : {tran_code}",
+ "@tran_code": {
+    "placeholders": {
+        "code": {
+            "type": "String"
+          }
+        }
+    },
+ "hint_sent_to": "Byoherejwe kuri: {sent}",
+  "@sent": {
+     "placeholders": {
+         "code": {
+             "type": "String"
+           }
+         }
+     },
+  "hint_received_from": "Byakiriwe kuri: {received}",
+    "@received": {
+       "placeholders": {
+           "code": {
+               "type": "String"
+             }
+           }
+       },
+  "transfer_money_title": "Ohereza Amafaranga",
+  "transfer_confirmation": "Kwemeza Kohereza",
+  "button_send_now": "Ohereza Ubu",
+  "button_retry": "Ongeraho",
+  "from_hint": "Uva kuri",
+  "to_hint": "Ugera kuri",
+  "transfer_amount_hint": "Umubare woherejwe",
+  "service_charge_hint": "Ikiguzi cya serivisi",
+  "service_commission_hint": "Komisiyo",
+  "total_amount_hint": "Umubare wose",
+  "change_password_title": "Hindura Ijambo ry'Ibanga",
+  "change_password_success_msg": "Ijambo ry'ibanga ryahinduwe neza,\nInjira kugirango ukomeze.",
+  "un_verified_account": "Konti itemewe",
+  "un_verified_account_msg": "Konti y'umukoresha ntiyemejwe. Kwishyura ntibishobora gukorwa kuri konti itemewe.",
+  "scan_qrcode_title": "Soma QR Code",
+  "adjust_qrcode_msg": "Shyira QR Code mu kadirishya k'icyatsi.",
+  "error_controller_not_ready": "QR processor nabwo iri gukora.",
+  "permission_denied": "Uburenganzira bwo kwifashisha camera yanze.",
+  "enable_app_lock": "Emeza Kubika LipaQuick",
+  "payment_methods_title": "Uburyo bwo Kwishyura",
+  "default_payment_hint": "Uburyo bwo Kwishyura bwa Default",
+  "payment_methods_not_found": "Nta buryo bwo kwishyura wahujwe na konti. Ongera uburyo bwo kwishyura.",
+  "add_payment": "Ongeraho Kwishyura",
+  "create_app_pin": "Hanga PIN",
+  "pin_create_success": "PIN yaremwe neza",
+  "enter_valid_pin": "PIN idakwiye",
+  "enter_app_lock_pin": "Shyira PIN yawe",
+  "edit_quick_actions": "Hindura Ibikorwa Byihuse",
+  "update_quick_actions": "Vugurura Ibikorwa Byihuse",
+  "enable_disable_quick": "Emeza-Cyangwa Hindura Ibikorwa Byihuse",
+  "social_post": "Ibyo ku Mbuga Rusange",
+  "no_social_post_found": "Nta byanditswe ku mbuga rusange byabonetse",
+  "forgot_password_title": "Kugarura Konti",
+  "forgot_password_success_msg": "Ijambo ry'ibanga ryahinduwe neza,\nInjira kugirango ukomeze."
+}

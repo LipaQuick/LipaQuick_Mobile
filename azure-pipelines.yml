@@ -1,0 +1,228 @@
+trigger:
+- dev_V1
+
+pool:
+  name: agent
+
+stages:
+- stage: CodeCheckout0
+  jobs:
+    - job: CodeCheckout
+      displayName: code checkout
+      steps:
+        - checkout: self
+
+- stage: CodeReview
+  jobs:
+  - job: waitForValidation
+    displayName: Wait for external validation
+    pool: server
+    timeoutInMinutes: 4320
+    steps:
+    - task: ManualValidation@0
+      timeoutInMinutes: 1440
+      inputs:
+        notifyUsers: |
+          "syed.saquib@xbizventures.com"
+        instructions: 'Please validate the build configuration and resume'
+        onTimeout: 'resume'
+
+  - job: SemgrepCodeReview
+    dependsOn:
+    - waitForValidation
+    displayName: 'SemgrepCodeReview'
+    steps:
+      - task: Bash@3
+        displayName: 'Run Semgrep and handle output'
+        inputs:
+          targetType: 'inline'
+          workingDirectory: $(Build.SourcesDirectory)
+          script: |
+            # export REPO_NAME=$(basename $(git config --get remote.origin.url) | cut -d. -f1)
+            export REPO_NAME=$(basename $(git config --get remote.origin.url) .git)
+            export BRANCH_NAME=$(Build.SourceBranchName)
+            # export BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+            export CURRENT_DATETIME=$(date '+%Y%m%d_%H%M%S')
+
+            # Define the directory structure
+            output_dir="/home/ubuntu/results/$REPO_NAME/$BRANCH_NAME/$CURRENT_DATETIME/"
+
+
+            # Create the directory if it doesn't exist
+            mkdir -p "$output_dir"
+
+            # Store the path in a file
+            echo $output_dir > /home/ubuntu/results/path.txt
+            sudo chmod 777 /home/ubuntu/results/path.txt
+
+
+            # Run semgrep and store the output in the directory
+            /home/ubuntu/.local/bin/semgrep --config auto --json --output "$output_dir/semgrep_output.json" .
+
+            # Verify the contents of the output directory
+            echo "Directory contents after Semgrep:"
+            ls -R "$output_dir"
+            
+            # Check if the output file is created and not empty
+            if [ -s "$output_dir/semgrep_output.json" ]; then
+              echo "Semgrep results generated successfully."
+              cat "$output_dir/semgrep_output.json"
+            else
+              echo "No results found for Semgrep."
+            fi
+
+      - task: Bash@3
+        displayName: 'Parse Semgrep results and create work items'
+        inputs:
+          targetType: 'inline'
+          script: |
+            # Define the directory structure
+            export CUSTOM_PATH=$(< /home/ubuntu/results/path.txt)
+            export REPO_NAME=$(basename $(git config --get remote.origin.url) .git)
+            # export REPO_NAME=$(basename $(git config --get remote.origin.url) | cut -d. -f1)
+            export BRANCH_NAME=$(Build.SourceBranchName)
+            # export BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+            export CURRENT_DATETIME=$(date '+%d%m%Y')
+
+            semgrep_output="$CUSTOM_PATH/semgrep_output.json"
+            echo "Semgrep output file: $semgrep_output"
+            work_item_created=false  # Flag to track if any work item is created
+
+            if [ -s "$semgrep_output" ]; then
+              echo "Parsing Semgrep results..."
+              findings=$(jq -c '.results[]' $semgrep_output)
+              echo "Findings: $findings"
+  
+              if [ ! -z "$findings" ]; then
+                echo "$findings" | while read -r finding; do
+                check_id=$(echo $finding | jq -r '.check_id')
+                path=$(echo $finding | jq -r '.path')
+                line=$(echo $finding | jq -r '.start.line')
+                message=$(echo $finding | jq -r '.extra.message')
+      
+                title="Semgrep Finding: $check_id"
+                description_md=$(echo -e "Repository: $REPO_NAME Branch:  $BRANCH_NAME Date: $CURRENT_DATETIME File: $path Line: $line Message: $message")
+      
+                echo "Creating work item with title: $title"
+                if az boards work-item create --type Task --title "$title" --description "$description_md" --assigned-to "$(PROJECT_LEADER)"; then
+                  echo "Work item created for finding: $finding"
+                  work_item_created=true
+                else
+                  echo "Failed to create work item for finding: $finding"
+                fi
+              done
+              else
+                echo "No vulnerabilities found in Semgrep results."
+              fi
+            else
+              echo "Semgrep output file is empty or does not exist."
+            fi
+
+            if [ "$work_item_created" = true ]; then
+              echo "At least one work item was created. Failing the pipeline."
+              exit 1
+            fi
+
+            #cd /home/ubuntu/SCA/secureNexusSca/
+            #python3 secureNexusSca.py --sca swagger &
+
+- stage: RunSoftwareComposition
+  jobs:
+  - job: RunSCA
+    displayName: 'Run SCA'
+    steps:
+      - task: Bash@3
+        displayName: 'Run SCA'
+        inputs:
+          targetType: 'inline'
+          script: |
+
+            cd /home/ubuntu/SCA/secureNexusSca/
+            python3 secureNexusSca.py --sca swagger &
+
+      - task: Bash@3
+        displayName: 'Run curl command'
+        inputs:
+          targetType: 'inline'
+          script: |
+
+            # change the url based on the scenario
+            response=$(curl -X 'GET' 'http://127.0.0.1:4999/vulnerability/git/url=$(REPOURL)' -H 'accept: application/json')
+            cat /home/ubuntu/results/path.txt
+            echo "$response" | tee output.log
+            # Define the directory structure
+            export CUSTOM_PATH=$(< /home/ubuntu/results/path.txt)
+            echo "$response" > "$CUSTOM_PATH/sca_output.json"
+
+
+            sca_output="$CUSTOM_PATH/sca_output.json"
+            echo "SCA output file: $sca_output"
+
+            if [ -s "$sca_output" ]; then
+              echo "Parsing SCA results..."
+              vulnerabilities=$(jq -c '.. | .vulnerabilityData? // empty | .[]' $sca_output)
+              #vulnerabilities=$(jq -c '.[].[].vulnerabilityData[]' $sca_output)
+              echo "Vulnerabilities: $vulnerabilities"
+
+              if [ ! -z "$vulnerabilities" ]; then
+                echo "$vulnerabilities" | while read -r vulnerability; do
+                  packagename=$(echo $vulnerability | jq -r '.packagename')
+                  cveValue=$(echo $vulnerability | jq -r '.cveValue')
+                  severity=$(echo $vulnerability | jq -r '.severity')
+                  description=$(echo $vulnerability | jq -r '.description')
+                  location=$(echo $vulnerability | jq -r '.location')
+                  version=$(echo $vulnerability | jq -r '.version')
+
+                  if [ "$severity" = "High" ] || [ "$severity" = "Medium" ] || [ "$severity" = "Critical" ]; then
+                    title="SCA Finding: $packagename $cveValue $severity"
+                    description_md=$(echo -e "Description: $description Location: $location Version: $version")
+
+                    echo "The vulnereblity severity is $severity ."
+                    echo "Creating work item with title: $title"
+                    az boards work-item create --type Task --title "$title" --description "$description_md" --assigned-to "$(PROJECT_LEADER)" || echo "Failed to create work item for vulnerability: $vulnerability"
+                    
+                  else
+                    echo "Skipping vulnerability with severity: $severity"
+                  fi
+                done
+              else
+                echo "No vulnerabilities found in SCA results."
+              fi
+            else
+              echo "SCA output file is empty or does not exist."
+            fi
+         # displayName: 'Parse SCA Output and Create Work Items'
+
+- stage: SecretDetection
+  displayName: 'Secret Detection Stage'
+  jobs:
+  - job: DetectSecrets
+    displayName: 'Run Secret Detection Script'
+   
+    steps:
+    
+    - script: |
+        cd /home/ubuntu/secrets_micro/
+        output=$(python3 find_secrets_script.py $(System.DefaultWorkingDirectory))
+
+        # Count the number of lines in the output
+        num_lines=$(echo "$output" | wc -l)
+
+        # Define the directory structure
+        export CUSTOM_PATH=$(< /home/ubuntu/results/path.txt)
+
+        # Create the directory if it doesn't exist
+        mkdir -p "$CUSTOM_PATH/Secrets"
+
+        # Check if the number of lines is greater than 2
+        if [ "$num_lines" -gt 2 ]; then
+          echo "Secrets found!"
+          echo "$output"  # Display the output for reference
+          exit 1
+        else 
+          echo "$output" > "$CUSTOM_PATH/Secrets/secrets_found.txt"
+          echo "No secrets found. Continuing with the pipeline build."
+          
+        fi
+      displayName: 'Run find_secrets_script.py'
+        

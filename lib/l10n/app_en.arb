@@ -1,0 +1,322 @@
+{
+  "choose_language": "Chosen Language",
+  "onBoarding": "On-Boarding",
+  "getStarted": "Get Started",
+  "haveAccount": "Already have an Account?",
+  "@@locale" : "en",
+  "welcome": "Welcome",
+  "welcome_end": "LipaQuick",
+  "register": "Don't have an account,",
+  "register_here": "Sign Up",
+  "user_name_hint": "Phone Number/Email",
+  "password_hint": "Password",
+  "old_password_hint": "Old Password",
+  "new_password_hint": "New Password",
+  "forgot_password_hint": "Forgot Password",
+  "login_button_text": "Login",
+
+  "first_name_hint": "First Name",
+  "last_name_hint": "Last Name",
+  "email_hint": "Email",
+  "phone_hint": "Phone",
+  "dob_hint": "DOB",
+  "id_number": "ID Number",
+  "confirm_password":"Confirm Password",
+  "sign_up_now": "Sign Up Now",
+  "trusted_by_users":"Trusted by Users",
+  "already_have_an_account": "Already have an account,",
+  "login_here":"Login Here",
+  "step_1":"Step 1",
+  "step_2":"Step 2",
+  "step_3":"Step 3",
+  "step_4":"Step 4",
+  "gender":"Gender",
+  "male":"Male",
+  "female":"Female",
+  "other":"Others",
+  "btn_next":"Next",
+  "id_type":"ID Type",
+  "id_photo":"Identity Photo",
+  "street":"Street",
+  "referral_code":"Referral Code",
+  "referral_code_hint":"Enter or Paste your Referral Code here.",
+  "referral_code_validation":"Please enter Referral Code.",
+  "term_conditions":"I agree to the Terms and Conditions, Privacy Policy and Content Policy",
+  "registration":"Registration",
+  "error":"Error",
+
+  "validation_password_characters":"Password has at least 8 characters\n",
+  "validation_password_lowercase":"Password must contain at least one lowercase letter\n",
+  "validation_password_uppercase":"Password must contain at least one uppercase letter\n",
+  "validation_password_digit":"Password must contain at least one digit\n",
+  "validation_password_symbol":"Password must contain at least one symbol (*@#$)",
+
+  "validation_street":"Please enter street.",
+  "validation_select_id_hint":"Select your ID-Card",
+  "validation_id_photo":"Select your ID-Card",
+  "validation_pick_image_msg":"You have not yet picked an image.",
+  "validation_identity_error":"Invalid value has been entered, please enter valid {hint}",
+  "@validation_identity_error": {
+      "placeholders": {
+        "hint": {
+          "type": "String"
+        }
+      }
+    },
+
+
+  "validation_first_name":"Please enter first name.",
+  "validation_last_name":"Please enter last name.",
+  "validation_email":"Please enter email.",
+  "validation_email_valid":"Please valid email address.",
+  "validation_phone":"Please enter phone number.",
+  "validation_phone_valid":"Please enter valid phone number.",
+  "validation_dob":"Please select your DOB.",
+  "validation_id_number":"Please enter ID number.",
+  "validation_confirm_password":"Please enter confirm password.",
+  "validation_password_not_matched":"Password do not match, please check your passwords again.",
+
+  "validation_phone_email_empty": "Please enter phone number or email.",
+  "validation_phone_email_valid": "Please enter valid phone number or email.",
+  "validation_password_empty": "Please enter password.",
+  "validation_password_valid": "Please enter valid password.",
+  "invalid_login_credentials": "Invalid username or password, Please enter valid login credentials",
+  "login_successful_msg": "Login successful",
+
+  "otp_page_title":"OTP Verification",
+  "otp_number_verified": "Your number has been successfully verified. Press OK to continue.",
+  "button_ok": "OK",
+  "success_hint": "Success",
+  "enter_otp_hint": "Verify Mobile",
+  "sent_verification_hint": "Enter 6 digit code we have sent",
+  "button_continue": "Continue",
+  "no_otp_recevied_hint": "Haven't received verification code?",
+  "button_resend_hint": "Resend Code",
+  "resend_otp_hint": "Resend Code in {time} seconds.",
+  "@resend_otp_hint": {
+    "placeholders": {
+      "time": {
+        "type": "int"
+      }
+    }
+  },
+"invalid_otp_msg":"We could not verify your phone number, Please try again.",
+"account_number_hint": "Account Number",
+"re_enter_account_number": "Re-Enter Account Number",
+"account_holder_name": "Account Holder's Name",
+"select_bank_hint": "Select Your Bank",
+"swift_code_hint": "Enter Swift Code",
+
+"recipient_account_number_hint": "Recipient Account Number",
+"recipient_account_holder_name": "Recipient Name",
+"recipient_select_bank_hint": "Select recipient's bank",
+"recipient_swift_code_hint": "Recipient Swift Code",
+
+"transfer_confirm_title": "Please confirm the \ndetails of your transfer:",
+"bank_name_hint": "Bank Name",
+"confirm_pay_hint": "Confirm and Pay",
+
+"card_number_hint": "Card Number",
+"re_enter_card_number": "Re-Enter Card Number",
+"expired_date": "Expiry Date",
+"cvc_cvv_hint": "CVC/CVV",
+"card_holder_name_hint": "Card Holder Name",
+
+ "validation_hint": "Please enter {hint}.",
+ "@validation_hint": {
+     "placeholders": {
+       "hint": {
+         "type": "String"
+       }
+     }
+   },
+ "add_account_title": "Add Bank Account",
+ "set_default_message": "Set this as your default account.",
+ "error_hint": "Error",
+ "user_account_hint": "Your Account",
+ "bank_account_hint": "Bank Account",
+ "something_went_wrong_hint": "Something is right here, please check back again.",
+ "go_back_hint": "Go Back",
+ "empty_bank_account_hint": "No Banks Accounts are Linked.",
+ "add_account_hint": "Add Bank Account",
+ "set_as_default_hint": "Set As Default",
+ "delete_hint": "Delete",
+ "default_account_delete_hint": "This is primary account linked to the account. Please choose another default account, and then delete this account.",
+ "session_time_out_hint": "Oop''s seems you session has timed out. Please login to continue",
+ "banks_not_found_hint": "No Bank Found",
+ "select_bank_account_hint": "Select Your Bank",
+
+ "add_card_title": "Add Card",
+ "add_new_card_title": "Add New Card",
+ "expiry_date_title": "Expiry Date",
+ "expiry_date_error_hint": "Please select your expiry date",
+ "cards_title": "Your Cards",
+ "cards_error_title": "Cards",
+ "no_cards_added": "No Cards are Linked.\n Press ADD CARDS to link your card.",
+ "remove_card_hint": "Remove Card",
+ "dropdown_more_hint":"More",
+
+ "chat_title": "Chat",
+ "no_recent_chat_hint": "No Recent Chats",
+ "start_chat_hint": "Start Chat",
+
+ "reload_hint": "Reload",
+ "payment_paid_title": "Paid to {currency}{amount}",
+ "@payment_paid_title":{
+    "placeholders":{
+       "currency":{
+       "type": "String"
+       },
+       "amount":{
+         "type": "String"
+       }
+    }
+ },
+ "payment_received_title": "Received From {currency}{amount}",
+  "@payment_received_title":{
+     "placeholders":{
+        "currency":{
+        "type": "String"
+        },
+        "amount":{
+          "type": "String"
+        }
+     }
+  },
+
+  "search_title": "Search",
+  "try_again_hint": "Try Again",
+  "no_contact_hint": "No contacts found.",
+
+ "validation_format_hint": "Please enter valid {hint}.",
+ "@validation_format_hint": {
+    "placeholders": {
+      "hint": {
+        "type": "String"
+      }
+    }
+ },
+ "merchat_title": "Merchant",
+ "send_money_title": "Send Money",
+ "amount_title": "Amount",
+ "discount_applied": "Discount applied {discount_code}.",
+  "@discount_applied": {
+     "placeholders": {
+       "discount_code": {
+         "type": "String"
+       }
+     }
+  },
+  "discount_saving": "Discount saving {amount}.",
+    "@discount_saving": {
+       "placeholders": {
+         "amount": {
+           "type": "double",
+            "format": "decimalPattern"
+         }
+       }
+    },
+  "apply_discount": "Apply Discount",
+  "enter_amount": "Please enter amount.",
+  "pay_title": "Pay",
+  "select_bank_accout": "Please select your bank account.",
+
+ "logout_title": "Logout",
+ "logout_msg": "Do you want to logout?",
+ "btn_yes": "Yes",
+ "btn_no": "No",
+
+ "settings": "Settings",
+ "language": "Language",
+ "notification": "Notifications",
+ "invite_message": "I am inviting you to use LipaQuick, a simple and easy payment application.\n Here''s my code-{code} just enter while creating a account. On your first payment,you will get a cashback",
+   "@invite_message": {
+        "placeholders": {
+          "code": {
+            "type": "String"
+          }
+        }
+      },
+ "nav_profile": "My Profile",
+ "nav_merchant": "Nearby Merchant",
+ "nav_history": "Transaction History",
+ "nav_invite": "Invite a friend",
+ "nav_settings": "Settings",
+ "nav_more": "More",
+ "nav_logout": "Logout",
+
+ "nav_profile_transactions": "Transactions",
+ "nav_profile_transactions_hint": "Your transactions",
+ "nav_profile_accounts": "Accounts",
+ "nav_profile_accounts_hint": "Your linked bank accounts",
+ "nav_profile_cards": "Cards",
+ "nav_profile_cards_hint": "Your linked cards",
+ "nav_profile_privacy": "Privacy",
+ "nav_profile_privacy_hint": "Update details and password",
+ "nav_profile_payment": "Payment",
+ "nav_profile_payment_hint": "Update payment settings",
+ "nav_profile_notification": "Notification",
+ "nav_profile_notification_hint": "Change notification settings",
+ "nav_profile_logout": "Log out",
+ "nav_profile_logout_hint": "Exit the app and clear your session",
+ "no_internet": "Could not connect to the internet, Please check your network.",
+ "transaction_history_empty": "You have not performed any transactions.",
+ "transaction_code": "Transaction Code : {tran_code}",
+ "@tran_code": {
+    "placeholders": {
+        "code": {
+            "type": "String"
+          }
+        }
+    },
+ "hint_sent_to": "Sent To: {sent}",
+  "@sent": {
+     "placeholders": {
+         "code": {
+             "type": "String"
+           }
+         }
+     },
+  "hint_received_from": "Received From: {received}",
+    "@received": {
+       "placeholders": {
+           "code": {
+               "type": "String"
+             }
+           }
+       },
+  "transfer_money_title": "Transfer Money",
+  "transfer_confirmation": "Transfer Confirmation",
+  "button_send_now": "Send Now",
+  "button_retry": "Retry",
+  "from_hint": "From",
+  "to_hint": "To",
+  "transfer_amount_hint": "Transfer Amount",
+  "service_charge_hint": "Service Charge",
+  "service_commission_hint": "Commission",
+  "total_amount_hint": "Total Amount",
+  "change_password_title": "Change Password",
+  "change_password_success_msg": "You password had been updated successfully,\nPlease login to continue.",
+  "un_verified_account": "Un-Verified Account",
+  "un_verified_account_msg": "The user account has not been verified. Payment cannot be initiated to un-verified users.",
+  "scan_qrcode_title": "Scan QR Code",
+  "adjust_qrcode_msg": "Adjust QR code into the green box.",
+  "error_controller_not_ready": "QR processor is still get reading.",
+  "permission_denied": "Camera Access Permission Denied.",
+  "enable_app_lock": "Enable App Lock",
+  "payment_methods_title": "Payment Method",
+  "default_payment_hint": "Default Payment Method",
+  "payment_methods_not_found": "No payment methods has been linked to this account. Please link your payment method.",
+  "add_payment": "Add Payment",
+  "create_app_pin": "Create App Lock Pin",
+  "pin_create_success": "App lock pin created successfully",
+  "enter_valid_pin": "Invalid App Lock Pin",
+  "enter_app_lock_pin": "Enter your App Lock Pin",
+  "edit_quick_actions": "Edit Quick Actions",
+  "update_quick_actions": "Update Quick Actions",
+  "enable_disable_quick": "Enable-Disable quick actions",
+  "social_post": "Social Post",
+  "no_social_post_found": "No social post found",
+  "forgot_password_title": "Account Recovery",
+  "forgot_password_success_msg": "You password had been updated successfully,\nPlease login to continue."
+}

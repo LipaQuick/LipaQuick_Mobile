@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "766434305323",
+    "project_id": "lq-firebase",
+    "storage_bucket": "lq-firebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766434305323:android:1184dca17880811a4a116e",
+        "android_client_info": {
+          "package_name": "rw.lipaquick.lipa_quick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766434305323-735emidq32p8h6uvk2dfrif961nje3on.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rw.lipaquick.lipa_quick",
+            "certificate_hash": "0cb48dafb8545726f36569640bad982707c71536"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmBw2PVdGky3YgYCixZQyQc7dPTzT6m28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766434305323-caebrcaaa6vu88qjaosn9l6m6fek9pg6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "rw.lipaquick.lipaQuick"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
